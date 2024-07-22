@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+@font-face {
+	font-family: "Droid Sans";
+	src: url("../webfonts/DroidSans-Regular.woff2") format("woff2"), url("../webfonts/DroidSans-Regular.woff") format("woff"),
+		url("../webfonts/DroidSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Droid Sans";
+	src: url("../webfonts/DroidSans-Bold.woff2") format("woff2"), url("../webfonts/DroidSans-Bold.woff") format("woff"), url("../webfonts/DroidSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--thm-font: "Droid Sans";
+	--thm-font-b: "Abril Fatface", serif;
+	--thm-primary: #cf824c;
+	--thm-secondary: #1b1b1b;
+	--thm-text: #575757;
+	--white: #ffffff;
+}
+
+body {
+	font-family: var(--thm-font);
+	color: var(--thm-text);
+}
+.btn {
+	padding: 15px 32px;
+	border-radius: 0;
+}
+
+.btn-primary {
+	background-color: #e89a64;
+	border-color: #e89a64;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.slick-slider {
+	margin: 0 -12px;
+}
+.slick-slide {
+	margin-right: 12px;
+	margin-left: 12px;
+}
+.slick-arrow {
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	border: none;
+	border-radius: 50px;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	transform: translateY(-50%);
+	font-size: 0px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff' width='28' height='28' data-ux='Icon' %3E%3Cpath fill-rule='evenodd' d='M15.485 4L7 11.769l.499.484-.002.001L15.463 20l1.48-1.394-6.984-6.794 6.963-6.375z'%3E%3C/path%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 28px;
+	padding: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.slick-arrow:hover {
+	opacity: 0.6;
+}
+.slick-next {
+	left: unset;
+	right: -20px;
+	transform: translateY(-50%) rotate(180deg);
+}
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+	margin-top: 20px;
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.slick-dots li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.slick-dots li button {
+	border: none;
+	width: 12px;
+	height: 12px;
+	background-color: var(--white);
+	opacity: 0.6;
+	font-size: 0;
+	border-radius: 50px;
+}
+.slick-dots li.slick-active button {
+	opacity: 1;
+}
+/* ===============Header Start============ */
+.bb-header-top {
+	padding: 4px 0;
+	background-color: #e89a64;
+}
+
+.bb-top-header-title {
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 0;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.bb-header-center {
+	padding: 16px 28px;
+}
+.bb-header-center .navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.bb-header-center {
+	background-color: var(--white);
+}
+.bb-header-center .nav-link {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: var(--thm-secondary);
+	font-weight: 700;
+	padding: 0 !important;
+}
+.bb-header-center .nav-item {
+	padding: 6px;
+}
+.bb-header-center .nav-item:not(:first-child) {
+	margin-left: 26px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+	border-bottom: 1px solid var(--thm-primary);
+}
+
+.bb-header-center .navbar-brand {
+	padding: 0;
+}
+
+/* ===============Header End============ */
+
+/* ===========Home Start============== */
+/* hero section */
+.bb-hero-image img {
+	min-height: 60vh;
+}
+.bb-hero-content {
+	padding: 72px 0;
+	text-align: center;
+	background-color: #161616;
+	height: 100%;
+}
+
+.bb-hero-content__inner {
+	width: 66.66%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	padding: 0 40px;
+}
+
+.bb-hero-title {
+	font-size: 48px;
+	font-family: var(--thm-font-b);
+	color: var(--white);
+	margin-bottom: 15px;
+}
+
+.bb-hero-description {
+	font-size: 24px;
+	color: #a9a9a9;
+	margin-bottom: 24px;
+}
+
+.bb-hero-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bb-hero-btn .btn:not(:last-child) {
+	margin-right: 24px;
+}
+/* about section */
+.bb-about-section {
+	padding: 56px 0;
+}
+
+.bb-section-heading {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.bb-section-title {
+	margin-bottom: 0;
+	color: var(--thm-primary);
+	font-family: var(--thm-font-b);
+	font-size: 48px;
+}
+
+.bb-about-banner {
+	padding: 72px 40px;
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.bb-about-title {
+	font-size: 36px;
+	margin-bottom: 24px;
+	color: var(--white);
+}
+
+.bb-about-description {
+	font-size: 24px;
+	margin-bottom: 0;
+	color: var(--white);
+	line-height: 1.25;
+}
+
+.bb-about-banner1 {
+	background-image: url("../images/our-story-bg.webp");
+}
+
+.bb-about-banner2 {
+	background-image: url("../images/our-chef-bg.webp");
+	background-position: 51% 78%;
+}
+
+/* testimonial section */
+.bb-testimonial-slider-area {
+	max-width: 100%;
+	width: 964px;
+	margin: 0 auto;
+}
+.bb-testimonial-section {
+	padding: 56px 0;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.28) 100%), url("../images/testimonial-bg.webp");
+}
+
+.bb-testimonial-rating {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+.bb-testiminal-rating-name {
+	font-size: 24px;
+	color: var(--white);
+	margin-bottom: 4px;
+}
+.bb-testimonial-rating-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+.bb-testimonial-review-count {
+	margin-top: 4px;
+	display: inline-block;
+	text-decoration: none;
+	color: var(--white);
+	font-size: 18px;
+}
+
+.bb-testimonial-section .bb-section-heading {
+	margin-bottom: 56px;
+}
+.bb-testimonial-section .bb-section-title {
+	color: var(--white);
+	line-height: 1.2;
+	letter-spacing: 2px;
+}
+.bb-testimonial-rating-text {
+	margin-left: 16px;
+}
+.bb-testimonial-rating-details {
+	margin-left: 32px;
+}
+
+.bb-testimonial-item svg {
+	width: 20px;
+	height: 20px;
+}
+
+.bb-testimonial-slide__inner {
+	background-color: var(--white);
+	text-align: center;
+	padding: 32px 0;
+}
+.bb-testimonial-image img {
+	margin: 0 auto;
+}
+.bb-testimonial-slide-rating {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	margin-top: 24px;
+}
+
+.bb-testimonial-slide-rating-item {
+	width: 20px;
+}
+
+.bb-testimonial-slide-description {
+	padding: 24px;
+}
+
+.bb-testimonial-slide-description p span {
+	font-size: 18px;
+	color: var(--thm-secondary);
+}
+
+.bb-tetsimonial-slide-details {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	justify-content: center;
+	padding: 0 24px;
+}
+
+.bb-tetsimonial-slide-detail svg {
+	width: 28px;
+	height: 28px;
+}
+
+.bb-testimonial-othor-name {
+	font-weight: 600;
+	margin-bottom: 0;
+	padding: 0 10px;
+}
+
+.bb-testimonial-date {
+	margin-bottom: 0;
+}
+
+.bb-testimonial-silder {
+	margin: 0 -24px;
+}
+
+.bb-testimonial-silder .slick-slide {
+	margin-right: 24px;
+	margin-left: 24px;
+}
+.bb-testimonial-silder .slick-prev {
+	left: -150px;
+}
+.bb-testimonial-silder .slick-next {
+	right: -150px;
+}
+
+.bb-testimonial-silder .slick-dots {
+	margin-top: 40px;
+}
+
+.btn-more {
+	padding: 0;
+	display: inline-block;
+	color: rgb(166, 103, 60);
+	font-size: 18px;
+	display: inline-flex;
+	align-items: center;
+}
+.btn-more:hover {
+	color: #623e26;
+}
+
+.btn-more-icon {
+	margin-left: 4px;
+	display: inline-block;
+}
+
+/* blog section */
+.bb-blog-section {
+	padding: 56px 0;
+}
+
+.bb-blog-tabs {
+	justify-content: center;
+	margin-bottom: 48px;
+}
+.bb-blog-tabs .nav-item:not(:last-child) {
+	margin-right: 24px;
+}
+.bb-blog-tabs .nav-link {
+	padding: 0;
+	color: var(--thm-secondary);
+	font-size: 18px;
+}
+.bb-blog-tabs .nav-link.active,
+.bb-blog-tabs .show > .nav-link {
+	background-color: transparent;
+	color: #a6673c;
+	font-weight: 700;
+}
+/* ===========Home End============== */
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1280px;
+	}
+}
