@@ -66,4 +66,19 @@ $(document).ready(function () {
 			},
 		],
 	});
+
+	$('.bb-navbar-close').on('click', function () {
+		$('.navbar-collapse').collapse('hide');
+	});
+
+
+	$(window).scroll(function () {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 32) {
+			$(".bb-header-center").addClass("bb-header-fixed");
+		} else {
+			$(".bb-header-center").removeClass("bb-header-fixed");
+		}
+	});
 });
