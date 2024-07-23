@@ -8,7 +8,7 @@ $(document).ready(function () {
 		slidesToScroll: 3,
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1199,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
@@ -17,10 +17,14 @@ $(document).ready(function () {
 				},
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 991,
 				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					arrows: false,
+					centerMode: true,
+					centerPadding: "170px",
 				},
 			},
 			{
@@ -28,6 +32,8 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					dots: false,
+					arrows: false,
 				},
 			},
 		],
@@ -60,17 +66,4 @@ $(document).ready(function () {
 			},
 		],
 	});
-
-	// google conatct map
-	var iframe = document.getElementById("bbContactMap");
-
-	// Check if the iframe has loaded
-	iframe.onload = function () {
-		// Access the iframe's document and remove the link
-		var iframeDocument = iframe.contentWindow.document;
-		var largerMapLink = iframeDocument.querySelector(".place-card-large");
-		if (largerMapLink) {
-			largerMapLink.style.display = "none"; // Hide the link
-		}
-	};
 });

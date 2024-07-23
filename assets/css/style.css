@@ -174,7 +174,7 @@ body {
 }
 .bb-hero-image img {
 	min-height: 60vh;
-	max-height: 572px;
+	/* max-height: 572px; */
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -194,7 +194,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	height: 100%;
-	padding: 0 40px;
+	padding: 0 24px;
 }
 
 .bb-hero-title {
@@ -238,13 +238,17 @@ body {
 	line-height: 1.36;
 	letter-spacing: 2px;
 }
-
+.bb-about-wrapper {
+	margin-left: -12px;
+	margin-right: -12px;
+}
 .bb-about-banner {
 	padding: 72px 40px;
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
+	height: 100%;
 }
 
 .bb-about-title {
@@ -627,7 +631,7 @@ body {
 	margin-top: -150px;
 }
 
-.bb-map-btn {
+.bb-contact-map-wrapper .bb-map-btn {
 	padding: 7px 24px;
 	border-radius: 50px;
 	position: absolute;
@@ -683,7 +687,50 @@ body {
 	text-align: center;
 }
 /* ===========Footer End============== */
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
+	.container,
+	.container-md,
+	.container-sm {
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm {
+		max-width: 984px;
+	}
+	.bb-testimonial-rating-list-content .bb-testimonial-rating-text {
+		display: none;
+	}
+}
+@media (min-width: 1024px) {
+	.bb-contact-content__inner {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1200px) {
+	.bb-blog-item-content {
+		padding: 32px 24px 96px;
+	}
+}
+@media (min-width: 1280px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1160px;
+	}
+	.bb-hero-image img {
+		max-height: 572px;
+	}
+}
+@media (min-width: 1599px) {
 	.container,
 	.container-lg,
 	.container-md,
@@ -693,18 +740,142 @@ body {
 		max-width: 1280px;
 	}
 }
-@media (min-width: 1024px) {
-	.bb-blog-item-content {
-		padding: 32px 24px 96px;
+
+@media (max-width: 1599px) {
+	.bb-hero-description {
+		font-size: 22px;
 	}
-	.bb-contact-content__inner {
-		width: 70%;
-		margin: 0 auto;
+	.bb-top-header-title {
+		font-size: 16px;
+	}
+	.bb-header-center .nav-link {
+		font-size: 16px;
+	}
+	.bb-hero-title {
+		font-size: 44px;
+	}
+	.btn {
+		font-size: 14px;
+		padding: 16px 40px;
+	}
+	.bb-section-title {
+		font-size: 44px;
+	}
+	.bb-about-title {
+		font-size: 32px;
+	}
+	.bb-about-description {
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.bb-testiminal-rating-name {
+		font-size: 22px;
+	}
+	.bb-testimonial-review-count {
+		font-size: 16px;
+	}
+	.bb-testimonial-silder .slick-prev {
+		left: -40px;
+	}
+	.bb-testimonial-silder .slick-next {
+		right: -40px;
+	}
+	.bb-contact-info-title {
+		font-size: 22px;
+	}
+	.bb-contact-info-description {
+		font-size: 16px;
+	}
+	.bb-contact-info .btn-more-text {
+		font-size: 16px;
+	}
+	.bb-footer-copyright-text {
+		font-size: 16px;
 	}
 }
-@media (min-width: 992px) {
-	.bb-about-wrapper {
-		margin-left: -24px;
-		margin-right: -24px;
+
+@media (max-width: 1199px) {
+	.bb-testimonial-slider-area {
+		width: 628px;
+	}
+	.bb-testimonial-silder .slick-prev {
+		left: -130px;
+	}
+	.bb-testimonial-silder .slick-next {
+		right: -130px;
+	}
+	.bb-hero-title {
+		font-size: 38px;
+	}
+	.bb-hero-btn {
+		flex-direction: column;
+	}
+	.bb-hero-btn .btn:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+	.bb-section-title {
+		font-size: 38px;
+	}
+	.bb-about-title {
+		font-size: 30px;
+	}
+	.bb-testimonial-silder {
+		margin: 0 -5px;
+	}
+	.bb-testimonial-silder .slick-slide {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+}
+@media (max-width: 991px) {
+	.bb-testimonial-rating-logo {
+		display: none;
+	}
+	.bb-testimonial-rating-text {
+		display: none;
+	}
+	.bb-testimonial-rating-list-content .bb-testimonial-rating-text {
+		display: block;
+		margin-right: 16px;
+		margin-left: 0;
+	}
+	.bb-testimonial-rating-details {
+		margin-left: 0px;
+		text-align: center;
+	}
+	.bb-testimonial-rating-list-content {
+		margin-bottom: 32px;
+	}
+	.bb-testimonial-review-count {
+		text-decoration: underline;
+	}
+	.bb-blog-item {
+		width: 100%;
+	}
+	.bb-blog-item {
+		padding: 0 12px 0px;
+	}
+	.bb-related-app-card {
+		padding: 0 12px 48px;
+	}
+	.bb-related-app-section .col-12:last-child .bb-related-app-card {
+		padding-bottom: 0;
+	}
+	.bb-contact-map-wrapper {
+		height: 300px;
+	}
+	.bb-contact-section .row {
+		flex-direction: column-reverse;
+	}
+	.bb-contact-content .bb-section-title {
+		text-align: center;
+	}
+	.bb-social-link svg {
+		width: 40px;
+		height: 40px;
+	}
+	.bb-social-item {
+		margin: 0 16px 8px;
 	}
 }
