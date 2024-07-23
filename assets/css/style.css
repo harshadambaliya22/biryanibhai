@@ -41,6 +41,12 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: 700;
+	letter-spacing: 1px;
+}
+.btn-primary:hover {
+	background-color: #efbda3;
+	border-color: #efbda3;
+	color: #000000;
 }
 
 .slick-slider {
@@ -55,7 +61,6 @@ body {
 	height: 28px;
 	text-align: center;
 	border: none;
-	border-radius: 50px;
 	background-color: transparent;
 	position: absolute;
 	top: 50%;
@@ -68,6 +73,7 @@ body {
 	background-size: 28px;
 	padding: 0;
 	transition: all 0.3s ease-in-out;
+	z-index: 10;
 }
 
 .slick-arrow:hover {
@@ -213,6 +219,8 @@ body {
 	color: var(--thm-primary);
 	font-family: var(--thm-font-b);
 	font-size: 48px;
+	line-height: 1.2;
+	letter-spacing: 2px;
 }
 
 .bb-about-banner {
@@ -416,6 +424,185 @@ body {
 	color: #a6673c;
 	font-weight: 700;
 }
+
+.bb-blog-item {
+	width: 50%;
+	margin: 0 auto;
+	max-height: 100%;
+	padding: 0 24px 0px;
+}
+.bb-blog-item:hover .bb-blog-link {
+	box-shadow: rgb(187, 187, 187) 0px 0px 28px -3px;
+}
+.bb-blog-link {
+	display: block;
+	border: 1px solid rgb(226, 226, 226);
+	text-decoration: none;
+}
+.bb-blog-item-image img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+.bb-blog-item-content {
+	padding: 32px 24px;
+}
+.bb-blog-date {
+	font-size: 16px;
+	color: #595959;
+	margin-bottom: 16px;
+}
+
+.bb-blog-title {
+	font-size: 24px;
+	color: var(--thm-secondary);
+	margin-bottom: 16px;
+	line-height: 1.125;
+}
+.bb-blog-description {
+	font-size: 18px;
+	color: #5e5e5e;
+	line-height: 1.5;
+	margin-bottom: 16px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	text-overflow: ellipsis;
+}
+/* gallery section */
+.bb-gallery-section {
+	padding: 56px 0;
+	background-color: rgb(246, 246, 246);
+}
+.bb-gallery-wrapper {
+	padding: 0 24px 0px;
+}
+.bb-gallery-slider {
+	margin: 0 -3px;
+}
+
+.bb-gallery-slider .slick-slide {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.bb-gallery-item-image img {
+	min-height: 600px;
+	height: 600px;
+	overflow: hidden;
+	opacity: 0.3;
+}
+
+.bb-gallery-item.slick-center .bb-gallery-item-image img {
+	opacity: 1;
+}
+
+.bb-gallery-item-name {
+	font-size: 18px;
+	color: var(--thm-text);
+	margin-bottom: 0;
+	padding-top: 16px;
+	text-align: center;
+	opacity: 0;
+}
+
+.bb-gallery-item.slick-center .bb-gallery-item-name {
+	opacity: 1;
+}
+
+.bb-gallery-slider .slick-arrow {
+	left: 0;
+	background-color: rgba(22, 22, 22, 0.5);
+	width: 36px;
+	height: 44px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+.bb-gallery-slider .slick-next {
+	right: 0;
+	left: unset;
+}
+
+.bb-gallery-slider .slick-arrow:hover {
+	opacity: 1;
+}
+
+.bb-gallery-slider:hover .slick-arrow {
+	opacity: 1;
+	visibility: visible;
+}
+
+.bb-related-app-card {
+	padding: 0 12px 48px;
+	text-align: center;
+}
+.bb-related-app-card-image {
+	margin-bottom: 24px;
+}
+.bb-related-app-card-image img {
+	border-radius: 50%;
+}
+
+.bb-related-app-card-content .btn {
+	border-radius: 50px;
+}
+/* contact section */
+.bb-contact-content {
+	background-color: rgb(246, 246, 246);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.bb-contact-content__inner {
+	padding-top: 56px;
+	padding-bottom: 56px;
+}
+.bb-contact-content .bb-section-title {
+	text-align: left;
+}
+.bb-contact-info {
+	margin-bottom: 40px;
+}
+.bb-contact-info-title {
+	font-size: 24px;
+	margin-bottom: 24px;
+	color: #151515;
+}
+
+.bb-contact-info-description {
+	font-size: 18px;
+	color: var(--thm-text);
+	margin-bottom: 0px;
+}
+.bb-contact-info .btn-more {
+	margin-top: 24px;
+}
+.bb-contact-content .btn {
+	border-radius: 50px;
+}
+.bb-contact-map-wrapper {
+	height: 100%;
+	position: relative;
+}
+.bb-contact-map {
+	height: 100%;
+}
+
+.bb-map-btn {
+	padding: 7px 24px;
+	border-radius: 50px;
+	position: absolute;
+	/* top: 4px; */
+	bottom: 4px;
+	left: 56px;
+}
+
+.bb-btn-text {
+	margin-left: 3px;
+}
+
 /* ===========Home End============== */
 @media (min-width: 1400px) {
 	.container,
@@ -425,5 +612,14 @@ body {
 	.container-xl,
 	.container-xxl {
 		max-width: 1280px;
+	}
+}
+@media (min-width: 1024px) {
+	.bb-blog-item-content {
+		padding: 32px 24px 96px;
+	}
+	.bb-contact-content__inner {
+		width: 70%;
+		margin: 0 auto;
 	}
 }
