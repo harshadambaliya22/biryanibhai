@@ -588,14 +588,21 @@ body {
 }
 .bb-contact-map {
 	height: 100%;
+	overflow: hidden;
+}
+
+.bb-contact-map iframe {
+	height: calc(100% + 150px);
+	width:100%;
+	border: 0;
+	margin-top: -150px;
 }
 
 .bb-map-btn {
 	padding: 7px 24px;
 	border-radius: 50px;
 	position: absolute;
-	/* top: 4px; */
-	bottom: 4px;
+	top: 8px;
 	left: 56px;
 }
 
