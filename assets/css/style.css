@@ -141,12 +141,11 @@ body {
 	color: var(--thm-secondary);
 	font-weight: 700;
 	padding: 0 !important;
-}
-.bb-header-center .nav-item {
-	padding: 6px;
+	letter-spacing: 1.134px;
+	line-height: 24px;
 }
 .bb-header-center .nav-item:not(:first-child) {
-	margin-left: 26px;
+	margin-left: 32px;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
@@ -187,6 +186,7 @@ body {
 	font-family: var(--thm-font-b);
 	color: var(--white);
 	margin-bottom: 15px;
+	letter-spacing: 2px;
 }
 
 .bb-hero-description {
