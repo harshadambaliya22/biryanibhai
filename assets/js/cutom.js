@@ -67,11 +67,12 @@ $(document).ready(function () {
 		],
 	});
 
-	$('.bb-navbar-close').on('click', function () {
-		$('.navbar-collapse').collapse('hide');
+	// mobile menu
+	$(".bb-navbar-close").on("click", function () {
+		$(".navbar-collapse").collapse("hide");
 	});
 
-
+	// header sticky
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 
@@ -80,5 +81,15 @@ $(document).ready(function () {
 		} else {
 			$(".bb-header-center").removeClass("bb-header-fixed");
 		}
+	});
+
+	// conatct form
+	$(".bb-contact-btn").on("click", function () {
+		$(".bb-contact-form").addClass("show");
+		$(".bb-contact-content").addClass("form-show");
+	});
+	$(".bb-form-cancel-btn").on("click", function () {
+		$(".bb-contact-form").removeClass("show");
+		$(".bb-contact-content").removeClass("form-show");
 	});
 });
