@@ -375,7 +375,7 @@ textarea.form-control {
 
 .bb-about-banner1 {
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../images/our-story-bg.webp");
-	background-position: 51% 78%;
+	background-position: 50% 50%;
 }
 
 .bb-about-banner2 {
@@ -1058,6 +1058,92 @@ textarea.form-control {
 	margin-bottom: 32px;
 }
 /* ==============Catering Details End========= */
+/* ==============chat box Start========= */
+.bb-chat-box {
+	position: fixed;
+	bottom: 24px;
+	right: 24px;
+}
+.bb-chat-btn {
+	width: 65px;
+	height: 65px;
+	line-height: 65px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: #e89a64;
+	color: #000000;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 18px;
+	z-index: 999;
+	display: inline-block;
+}
+.bb-chat-btn:hover {
+	color: #000000;
+}
+.bb-chat-form {
+	width: 382px;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	border: 1px solid var(--white);
+	background-color: var(--white);
+	border-radius: 5px;
+	overflow-x: hidden;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 18px;
+	margin-bottom: 20px;
+}
+
+.bb-chat-form-title {
+	padding: 16px 24px 40px;
+	background-color: #e89a64;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 0;
+}
+
+.bb-chat-info {
+	margin: -24px 24px 24px;
+}
+.bb-chat-info {
+	position: relative;
+	background-color: var(--white);
+	border-radius: 5px;
+}
+.bb-chat-info-text {
+	margin-bottom: 0;
+	background-color: rgba(232, 154, 100, 0.3);
+	padding: 12px 15px;
+	border-radius: 5px;
+}
+.bb-chat-info-icon {
+	position: absolute;
+	left: 3px;
+	top: calc(100% - 2px);
+	line-height: 1;
+}
+.bb-chat-info-icon svg {
+	width: 33px;
+	height: 16px;
+	color: rgba(232, 154, 100, 0.3);
+}
+.bb-chat-form-wrapper {
+	padding: 0 24px;
+}
+.bb-chat-form-btn {
+	text-align: center;
+}
+.bb-chat-form-note {
+	font-size: 12px;
+	text-align: center;
+}
+.bb-chat-form-note a {
+	color: #a6673c;
+	text-decoration: none;
+}
+.bb-chat-form-note a:hover {
+	color: #623e26;
+}
+
+/* ==============chat box End========= */
 @media (min-width: 768px) {
 	.container,
 	.container-md,
