@@ -26,9 +26,15 @@
 	--white: #ffffff;
 }
 
-body {
+.bb-site {
 	font-family: var(--thm-font);
 	color: var(--thm-text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.bb-site-content {
+    flex: 1 0 auto;
 }
 .btn {
 	padding: 15px 40px;
@@ -613,10 +619,31 @@ body {
 }
 /* contact section */
 .bb-contact-content {
-	background-color: rgb(246, 246, 246);
+	background-color: #f6f6f6;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
+}
+.bb-contact-form {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-color: #f6f6f6;
+	overflow: auto;
+}
+.bb-contact-form__inner{
+	width: 600px;
+	max-width: 100%;
+	margin: auto;
+	padding: 56px 24px;
+}
+.bb-contact-form-title {
+    font-size: 24px;
+    color: #151515;
+    margin-bottom: 24px;
 }
 .bb-contact-content__inner {
 	padding: 56px 24px;
@@ -705,6 +732,36 @@ body {
 	height: 48px;
 }
 /* ===========Home End============== */
+
+/* =========== Catering Page Start ============== */
+.bb-event-section {
+    padding: 56px 0 8px;
+}
+.bb-event-list-area {
+    display: flex;
+    flex-wrap: wrap;
+	margin: 0 -12px;
+}
+.bb-event-item {
+    width: 50%;
+    padding: 0 24px 48px;
+}
+.bb-event-item-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #1b1b1b;
+}
+.bb-event-item-link {
+    display: block;
+}
+.bb-event-item-link img {
+    width: 100%;
+	height: 296px;
+	object-fit: cover;
+}
+/* =========== Catering Page End ============== */
+
 /* ===========Footer Start============== */
 .bb-footer-section {
 	padding: 32px 0;
@@ -761,7 +818,7 @@ body {
 		max-height: 572px;
 	}
 }
-@media (min-width: 1599px) {
+@media (min-width: 1535px) {
 	.container,
 	.container-lg,
 	.container-md,
@@ -772,7 +829,7 @@ body {
 	}
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1535px) {
 	.bb-hero-description {
 		font-size: 22px;
 	}
