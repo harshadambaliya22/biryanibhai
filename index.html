@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 
-	<body class="bb-site">
+	<body class="bb-site bb-home-page">
 		<!-- Header Start -->
 		<header class="bb-site-header">
 			<div class="bb-header-top">
@@ -24,7 +24,7 @@
 			<div class="bb-header-center">
 				<div class="container-fluid">
 					<nav class="navbar navbar-expand-lg">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="index.html">
 							<img src="assets/images/logo.webp" alt="main logo" />
 						</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,16 +38,7 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<span class="bb-navbar-close">
-								<svg
-									viewBox="0 0 24 24"
-									fill="currentColor"
-									width="40px"
-									height="40px"
-									data-ux="CloseIcon"
-									data-edit-interactive="true"
-									data-close="true"
-									class="x-el x-el-svg c1-1 c1-2 c1-5f c1-21 c1-2n c1-3i c1-3j c1-3k c1-3l c1-y c1-5g c1-5h c1-4t c1-5i c1-5j c1-5k c1-b c1-5l c1-5m c1-5n c1-5o c1-5p"
-								>
+								<svg viewBox="0 0 24 24" fill="currentColor" width="40px" height="40px" data-ux="CloseIcon" data-edit-interactive="true" data-close="true" class="x-el x-el-svg c1-1 c1-2 c1-5f c1-21 c1-2n c1-3i c1-3j c1-3k c1-3l c1-y c1-5g c1-5h c1-4t c1-5i c1-5j c1-5k c1-b c1-5l c1-5m c1-5n c1-5o c1-5p">
 									<path fill-rule="evenodd" d="M17.999 4l-6.293 6.293L5.413 4 4 5.414l6.292 6.293L4 18l1.413 1.414 6.293-6.292 6.293 6.292L19.414 18l-6.294-6.293 6.294-6.293z" fill="#f7f7f7"></path>
 								</svg>
 							</span>
@@ -658,34 +649,117 @@
 					<div class="bb-section-heading">
 						<h2 class="bb-section-title">Knowledge Corner</h2>
 					</div>
-
-					<ul class="nav nav-pills bb-blog-tabs" id="pills-tab" role="tablist">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="all-post-tab" data-bs-toggle="pill" data-bs-target="#all-post" type="button" role="tab" aria-controls="all-post" aria-selected="true">All Pgae</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="birayani-tab" data-bs-toggle="pill" data-bs-target="#birayani" type="button" role="tab" aria-controls="birayani" aria-selected="false">Biryani</button>
-						</li>
-					</ul>
-					<div class="tab-content bb-blog-content" id="pills-tabContent">
-						<div class="tab-pane fade show active" id="all-post" role="tabpanel" aria-labelledby="all-post-tab" tabindex="0">
-							<div class="bb-blog-item">
-								<a href="#" class="bb-blog-link">
-									<div class="bb-blog-item-image">
-										<img src="assets/images/blog-image.webp" class="img-fluid" alt="blog image" />
+					<div class="bb-blog-tab-list-wrapper">
+						<ul class="nav nav-pills bb-blog-tabs" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="all-post-tab" data-bs-toggle="pill" data-bs-target="#all-post" type="button" role="tab" aria-controls="all-post" aria-selected="true">All Pgae</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="birayani-tab" data-bs-toggle="pill" data-bs-target="#birayani" type="button" role="tab" aria-controls="birayani" aria-selected="false">Biryani</button>
+							</li>
+						</ul>
+						<div class="tab-content bb-blog-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="all-post" role="tabpanel" aria-labelledby="all-post-tab" tabindex="0">
+								<div class="bb-blog-item">
+									<div class="bb-blog-link">
+										<div class="bb-blog-item-image">
+											<img src="assets/images/blog-image.webp" class="img-fluid" alt="blog image" />
+										</div>
+										<div class="bb-blog-item-content">
+											<p class="bb-blog-date">May 21, 2024</p>
+											<h4 class="bb-blog-title">Origins of Biryani</h4>
+											<p class="bb-blog-description">No other Indian food has as many stories to tell as a biryani does. The stories of biriyani are as varied as the taste and flavor of the dish across the country. When we eat the first morsel of the biryani, we wonder – W</p>
+											<span class="btn-more bb-blog-continue-btn">
+												<span class="btn-more-text">Continue Reading</span>
+											</span>
+										</div>
 									</div>
-									<div class="bb-blog-item-content">
-										<p class="bb-blog-date">May 21, 2024</p>
-										<h4 class="bb-blog-title">Origins of Biryani</h4>
-										<p class="bb-blog-description">No other Indian food has as many stories to tell as a biryani does. The stories of biriyani are as varied as the taste and flavor of the dish across the country. When we eat the first morsel of the biryani, we wonder – W</p>
-										<span class="btn-more">
-											<span class="btn-more-text">Continue Reading</span>
-										</span>
-									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="birayani" role="tabpanel" aria-labelledby="birayani-tab" tabindex="0"></div>
+						</div>
+					</div>
+					<div class="bb-blog-details-wrapper">
+						<div class="bb-blog-details">
+							<div class="bb-blog-details-header">
+								<a href="javascript:void(0)" class="bb-back-btn">
+									<svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" data-ux="Icon" data-aid="chevronLeft" class="x-el x-el-svg c2-1 c2-2 c2-2i c2-r c2-s c2-3 c2-4 c2-5 c2-6 c2-7 c2-8"><path fill-rule="evenodd" d="M15.485 4L7 11.769l.499.484-.002.001L15.463 20l1.48-1.394-6.984-6.794 6.963-6.375z"></path></svg>
+									<span class="bb-back-btn-text">All Pots</span>
 								</a>
 							</div>
+							<div class="bb-blog-details-info">
+								<h3 class="bb-blog-details-title">Origins of Biryani</h3>
+								<p class="bb-blog-details-date">May 21, 2024</p>
+							</div>
+							<div class="bb-blog-details-image">
+								<img src="assets/images/blog-image.webp" class="img-fluid" alt="blog details image" />
+							</div>
+							<div class="bb-blog-details-content">
+								<p>
+									No other Indian food has as many stories to tell as a biryani does. The stories of biriyani are as varied as the taste and flavor of the dish across the country. When we eat the first morsel of the biryani, we wonder – Who was the person who first thought of such an amazing thing and what must have been the idea behind it! Let us try and unravel those biriyani
+									mysteries.
+								</p>
+								<p>Biryani is derived from Farsi or Persian word Biriyan meaning “fried before cooking”. It is believed to have first originated in Persia and that it might have taken different routes to travel many parts of the world. The Persian style of cooking (Dum) – slow breathing in oven and the name derivation have been the sources to justify this belief.</p>
+								<p>
+									As far as how it reached India, there are many interesting stories that bear testimony. Some say, it could have travelled via Afghanistan to North India or it could have been bought by the Arab traders via Arabian Sea to Calicut. Few believe that “Taimor”, a Muslim ruler bought the dish from Persia to India in 1394. And Quite a number believe that Mughal courts
+									were the ones who enticed the biriyani from Afghanistan and fusion-ed their cooking styles with the Persian influence.
+								</p>
+								<p>From North India, it was brought to Hyderabad by Aurangazeb when he invaded the south. From then on, Biriyani remained as the royal dish of the Nawabs and Nizams and became a celebration dish. (Infact Lucknow’s Awadhi biriyani is claimed as the first of the lots)</p>
+								<p>(Nawab – generally used for the rulers of Awadh and Central provinces and Nizam is the title, which rulers of Hyderabad take)</p>
+								<p>On how it was brought to regions of South India, another legend has it that the southern Malabar coast of India was frequently visited by Arab traders who influenced the cooking styles and made biryani popular.</p>
+								<p>There are records of a rice dish known as Oon Soru in Tamil Literature as early as the year 2 AD. Oon Soru was said to be made of rice, ghee, meat, coriander, pepper, turmeric and bay leaf and was used to feed military warriors.</p>
+								<figure class="bb-description-image">
+									<img src="assets/images/blog-description-img-1.webp" class="img-fluid" alt="blog description img 1" />
+								</figure>
+								<p>
+									Many believe that the dish originated in the 15th century during Mughal Emperor Shah Jahan’s rule. Once when Shah Jahan’s queen Mumtaz visited the military barracks, she found that the soldiers are under nourished and asked her royal chef to cook a rice dish which would encompass all quality nutrients & therein lay the origin of this dish with all the spices and
+									nutrients.
+								</p>
+								<p>
+									Another story that explains Biryani’s widespread is that of a traveller from Hyderabad, who on his maiden journey to the land of deserts – Dubai, stumbled upon a tribe based in Al Bastakiya district. As he reached there he gave some spices that he got from Iran to the tribe’s head chef in exchange of a night’s stay in the small district. That night the tribesmen
+									learnt that their small village would be attacked by a group of bandits. Since it was impossible to move all goods and food to a safe place in such a short time, the village head decided to hide everyone in a small cave nearby along with few goods that could help the villagers sustain their lives for few more days. That’s when one of the cooks came up with an
+									innovative solution to solve the tribe’s food problem.
+								</p>
+								<figure class="bb-description-image bb-description-image-2">
+									<img src="assets/images/blog-description-img-2.webp" class="img-fluid" alt="blog description img 2" />
+								</figure>
+								<p>
+									He took a huge clay pot and created three layers consisting of rice, meat and some gravy on the top. He then poured some water into the mixture and hid the pot beneath the hot sand. After the attack, he removed it and presented a cooked dish to the fellow villagers. The immense heat of the desert sun cooked an entire pot of rice along with some spices and meat.
+									The enticing aroma of the Iranian spices & rice enchanted the villagers. This is how the Biryani cooked in the Arabian Desert grabbed the traveler’s attention. He spread the recipe while coming back to his home town in Hyderabad.
+								</p>
+							</div>
+							<div class="bb-share-post">
+								<h6 class="bb-share-post-title">Share this post:</h6>
+								<ul class="bb-share-social-list">
+									<li class="bb-share-social-item">
+										<a href="#" class="bb-share-social-link facebook">
+											<svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" fil="#3b5998" data-ux="Icon" data-aid="RSS_SOCIAL_SHARE_BOTTOM_FACEBOOK" data-tccl="ux2.rss.blog.facebook_share_link.click,click">
+												<path fill-rule="evenodd" d="M22 12.061C22 6.505 17.523 2 12 2S2 6.505 2 12.061c0 5.022 3.657 9.184 8.438 9.939v-7.03h-2.54v-2.91h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.197 2.238.197v2.476h-1.26c-1.243 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.908h-2.33V22c4.78-.755 8.437-4.917 8.437-9.939z"></path>
+											</svg>
+										</a>
+									</li>
+									<li class="bb-share-social-item">
+										<a href="#" class="bb-share-social-link twitter">
+											<svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" data-ux="Icon" data-aid="RSS_SOCIAL_SHARE_BOTTOM_TWITTER" data-tccl="ux2.rss.blog.twitter_share_link.click,click">
+												<path d="M14.933 17.2645L7.44211 6.77221H9.06447L16.5654 17.2645H14.933Z"></path>
+												<path fill-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6893 12.6803L6 6H9.58023L12.6597 10.42L16.5504 6H17.6019L13.148 11.1015L18 18H14.4348L11.165 13.3471L7.07907 18H6L10.6893 12.6803Z"></path>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="tab-pane fade" id="birayani" role="tabpanel" aria-labelledby="birayani-tab" tabindex="0"></div>
+						<div class="bb-blog-category">
+							<h5 class="bb-blog-category-title">Categories</h5>
+							<ul class="bb-blog-category-list">
+								<li class="bb-blog-category-item">
+									<a href="#" class="bb-blog-category-link active">All Posts</a>
+								</li>
+								<li class="bb-blog-category-item">
+									<a href="#" class="bb-blog-category-link">Biryani</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -921,10 +995,7 @@
 									<a href="#" class="bb-social-link">
 										<svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40" data-ux="IconSocial" class="x-el x-el-svg c1-1 c1-2 c1-3e c1-21 c1-2n c1-gq c1-gr c1-52 c1-b c1-c c1-g0 c1-gs c1-d c1-gt c1-gu c1-gv c1-gw c1-7d c1-gx c1-gy c1-gz c1-e c1-f c1-g">
 											<g>
-												<path
-													d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-													fill="#1877F2"
-												></path>
+												<path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="#1877F2"></path>
 												<path d="M15.893 14.89l.443-2.89h-2.773v-1.875c0-.79.387-1.563 1.63-1.563h1.26v-2.46s-1.144-.196-2.238-.196c-2.284 0-3.777 1.385-3.777 3.89V12h-2.54v2.89h2.54v6.988a10.04 10.04 0 003.124 0v-6.987h2.33z" fill="#fff"></path>
 											</g>
 										</svg>

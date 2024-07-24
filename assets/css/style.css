@@ -190,6 +190,10 @@ textarea.form-control {
 	color: #525252;
 }
 /* ===============Header Start============ */
+
+.bb-site-header {
+	background-color: var(--thm-secondary);
+}
 .bb-header-top {
 	padding: 4px 0;
 	background-color: #e89a64;
@@ -205,15 +209,18 @@ textarea.form-control {
 
 .bb-header-center {
 	padding: 16px 28px;
+	background-color: var(--white);
+	transition: all ease-in-out 0.3s;
+	border-bottom: 1px solid #e2e2e2;
+}
+.bb-home-page .bb-header-center {
+	border-bottom: none;
 }
 .bb-header-center .navbar {
 	padding-top: 0;
 	padding-bottom: 0;
 }
-.bb-header-center {
-	background-color: var(--white);
-	transition: all ease-in-out 0.3s;
-}
+
 .bb-header-fixed {
 	position: fixed;
 	z-index: 10000;
@@ -367,11 +374,12 @@ textarea.form-control {
 }
 
 .bb-about-banner1 {
-	background-image: url("../images/our-story-bg.webp");
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../images/our-story-bg.webp");
+	background-position: 51% 78%;
 }
 
 .bb-about-banner2 {
-	background-image: url("../images/our-chef-bg.webp");
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../images/our-chef-bg.webp");
 	background-position: 51% 78%;
 }
 
@@ -534,7 +542,9 @@ textarea.form-control {
 .bb-blog-section {
 	padding: 56px 0;
 }
-
+.bb-blog-tab-list-wrapper.hide {
+	display: none;
+}
 .bb-blog-tabs {
 	justify-content: center;
 	margin-bottom: 48px;
@@ -567,7 +577,9 @@ textarea.form-control {
 	display: block;
 	border: 1px solid rgb(226, 226, 226);
 	text-decoration: none;
+	cursor: pointer;
 }
+
 .bb-blog-item-image img {
 	height: 300px;
 	width: 100%;
@@ -598,6 +610,143 @@ textarea.form-control {
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 4;
 	text-overflow: ellipsis;
+}
+.bb-blog-details-wrapper {
+	display: none;
+	padding: 0 32px;
+}
+
+.bb-blog-details-wrapper.show {
+	display: flex;
+}
+
+.bb-blog-details {
+	width: 66.66%;
+	padding: 0 40px;
+}
+.bb-blog-category {
+	width: 33.33%;
+	padding: 0 40px 0 0;
+}
+.bb-blog-details-header {
+	margin-bottom: 40px;
+}
+.bb-back-btn {
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	font-size: 18px;
+	color: #a6673c;
+	transition: all 0.3s ease-in-out;
+}
+.bb-back-btn:hover {
+	color: #623e26;
+}
+
+.bb-back-btn .bb-back-btn-text {
+	margin-left: 4px;
+}
+
+.bb-blog-details-title {
+	color: #cf824c;
+	font-size: 36px;
+	margin-bottom: 8px;
+}
+.bb-blog-details-date {
+	font-size: 16px;
+	color: #595959;
+	margin-bottom: 32px;
+}
+
+.bb-blog-details-image {
+	margin-bottom: 24px;
+}
+
+.bb-blog-details-image img {
+	height: 477px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.bb-blog-details-content p {
+	font-size: 18px;
+	color: #5e5e5e;
+	margin-bottom: 10px;
+}
+.bb-description-image {
+	float: left;
+	margin-right: 24px;
+	margin-bottom: 24px;
+}
+.bb-description-image img {
+	width: 354px;
+	height: auto;
+}
+.bb-description-image-2 {
+	float: right;
+}
+.bb-share-post {
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+}
+.bb-share-post-title {
+	font-size: 16px;
+	color: var(--thm-secondary);
+	margin-bottom: 0;
+	margin-right: 24px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.bb-share-social-list {
+	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+}
+.bb-share-social-item {
+	margin-right: 8px;
+}
+
+.bb-share-social-link.facebook {
+	color: #3b5998;
+}
+.bb-share-social-link.twitter {
+	color: #000000;
+}
+
+.bb-blog-category-title {
+	font-size: 24px;
+	color: var(--thm-secondary);
+	margin-bottom: 24px;
+	line-height: 1.25;
+}
+
+.bb-blog-category-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.bb-blog-category-item {
+	margin-bottom: 24px;
+}
+
+.bb-blog-category-link {
+	font-size: 18px;
+	font-weight: 400;
+	display: block;
+	text-decoration: none;
+	color: var(--thm-secondary);
+}
+.bb-blog-category-link:hover {
+	color: #623e26;
+}
+.bb-blog-category-link.active {
+	color: #a6673c;
+	font-weight: 700;
 }
 /* gallery section */
 .bb-gallery-section {
@@ -885,6 +1034,30 @@ textarea.form-control {
 	text-align: center;
 }
 /* ===========Footer End============== */
+/* ==============Catering Details Start========= */
+.bb-catering-details-section {
+	padding: 56px 0;
+}
+.bb-catering-details-image {
+	padding: 0 12px;
+}
+.bb-catering-details-content {
+	padding: 0 12px;
+}
+.bb-catering-details-content .bb-section-heading {
+	margin-bottom: 24px;
+}
+
+.bb-catering-details-content .bb-section-title {
+	text-align: left;
+	color: #1b1b1b;
+}
+
+.bb-catering-description {
+	font-size: 24px;
+	margin-bottom: 32px;
+}
+/* ==============Catering Details End========= */
 @media (min-width: 768px) {
 	.container,
 	.container-md,
@@ -1005,6 +1178,36 @@ textarea.form-control {
 	.bb-form-cancel-btn {
 		font-size: 16px;
 	}
+	.bb-event-item-title {
+		font-size: 22px;
+	}
+	.bb-event-item-link img {
+		height: 266px;
+	}
+	.bb-catering-description {
+		font-size: 22px;
+	}
+	.bb-back-btn .bb-back-btn-text {
+		font-size: 16px;
+	}
+	.bb-blog-details-title {
+		font-size: 32px;
+	}
+	.bb-blog-details-date {
+		font-size: 14px;
+	}
+	.bb-blog-details-content p {
+		font-size: 16px;
+	}
+	.bb-blog-category-title {
+		font-size: 22px;
+	}
+	.bb-blog-category-link {
+		font-size: 16px;
+	}
+	.bb-blog-details-image img {
+		height: 423px;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -1039,6 +1242,12 @@ textarea.form-control {
 	.bb-testimonial-silder .slick-slide {
 		margin-right: 5px;
 		margin-left: 5px;
+	}
+	.bb-event-item-link img {
+		height: 222px;
+	}
+	.bb-blog-details-image img {
+		height: 344px;
 	}
 }
 @media (max-width: 991px) {
@@ -1215,6 +1424,44 @@ textarea.form-control {
 	.bb-form-cancel-btn {
 		margin-left: 0;
 	}
+	.bb-event-item-link img {
+		height: 168px;
+	}
+	.bb-catering-details-content {
+		padding-top: 72px;
+	}
+	.bb-catering-details-section {
+		padding: 56px 0 72px;
+	}
+	.bb-blog-details-wrapper {
+		padding: 0 36px;
+	}
+	.bb-blog-details-wrapper {
+		flex-direction: column;
+	}
+	.bb-blog-details {
+		padding: 32px 0;
+		width: 100%;
+	}
+	.bb-blog-category {
+		width: 100%;
+		padding: 0;
+	}
+	.bb-description-image img {
+		width: 100%;
+	}
+	.bb-description-image {
+		float: none;
+	}
+	.bb-share-post {
+		margin-top: 24px;
+	}
+	.bb-blog-details-title {
+		font-size: 30px;
+	}
+	.bb-blog-details-image img {
+		height: 451px;
+	}
 }
 @media (max-width: 767px) {
 	.bb-header-fixed .navbar-brand img {
@@ -1321,5 +1568,30 @@ textarea.form-control {
 	}
 	.bb-contact-content.form-show .bb-contact-content__inner {
 		padding-bottom: 0;
+	}
+	.bb-event-item {
+		width: 100%;
+		padding: 0 24px 24px;
+	}
+	.bb-event-item:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	.bb-event-section {
+		padding: 40px 0 16px;
+	}
+	.bb-catering-details-section {
+		padding: 40px 0 64px;
+	}
+	.bb-catering-details-content {
+		padding-top: 48px;
+	}
+	.bb-catering-details-content .btn {
+		width: 100%;
+	}
+	.bb-blog-details-title {
+		font-size: 28px;
+	}
+	.bb-blog-details-image img {
+		height: 221px;
 	}
 }

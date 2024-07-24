@@ -92,4 +92,13 @@ $(document).ready(function () {
 		$(".bb-contact-form").removeClass("show");
 		$(".bb-contact-content").removeClass("form-show");
 	});
+	// blog section
+	$(".bb-blog-continue-btn").on("click", function () {
+		$(".bb-blog-details-wrapper").addClass("show");
+		$(".bb-blog-tab-list-wrapper").addClass("hide");
+	});
+	$(".bb-back-btn").on("click", function () {
+		$(".bb-blog-details-wrapper").removeClass("show");
+		$(".bb-blog-tab-list-wrapper").removeClass("hide");
+	});
 });
