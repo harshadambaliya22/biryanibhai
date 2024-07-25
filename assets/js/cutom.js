@@ -68,8 +68,12 @@ $(document).ready(function () {
 	});
 
 	// mobile menu
+	$(".navbar-toggler").on("click", function () {
+		$(".bb-site").addClass("disable-scroll");
+	});
 	$(".bb-navbar-close").on("click", function () {
 		$(".navbar-collapse").collapse("hide");
+		$(".bb-site").removeClass("disable-scroll");
 	});
 
 	// header sticky
@@ -100,5 +104,19 @@ $(document).ready(function () {
 	$(".bb-back-btn").on("click", function () {
 		$(".bb-blog-details-wrapper").removeClass("show");
 		$(".bb-blog-tab-list-wrapper").removeClass("hide");
+	});
+
+	//chatbox
+	$(".bb-chat-btn").on("click", function () {
+		$(".bb-chat-box").addClass("open");
+		$(".bb-site").addClass("chatbox-show");
+	});
+	$(".bb-chat-close-btn").on("click", function () {
+		$(".bb-chat-box").removeClass("open");
+		$(".bb-site").removeClass("chatbox-show");
+	});
+	$(".bb-chat-mobile-close-btn").on("click", function () {
+		$(".bb-chat-box").removeClass("open");
+		$(".bb-site").removeClass("chatbox-show");
 	});
 });

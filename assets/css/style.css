@@ -189,6 +189,9 @@ textarea.form-control {
 	font-size: 14px;
 	color: #525252;
 }
+.bb-site.disable-scroll {
+	overflow: hidden;
+}
 /* ===============Header Start============ */
 
 .bb-site-header {
@@ -223,7 +226,7 @@ textarea.form-control {
 
 .bb-header-fixed {
 	position: fixed;
-	z-index: 10000;
+	z-index: 99;
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -424,6 +427,9 @@ textarea.form-control {
 	color: var(--white);
 	font-size: 18px;
 }
+.bb-testimonial-review-count:hover {
+	color: var(--white);
+}
 
 .bb-testimonial-section .bb-section-heading {
 	margin-bottom: 56px;
@@ -509,6 +515,9 @@ textarea.form-control {
 .bb-testimonial-silder .slick-slide {
 	margin-right: 24px;
 	margin-left: 24px;
+}
+.bb-testimonial-silder .slick-arrow {
+	top: calc(50% - 32px);
 }
 .bb-testimonial-silder .slick-prev {
 	left: -150px;
@@ -1063,7 +1072,9 @@ textarea.form-control {
 	position: fixed;
 	bottom: 24px;
 	right: 24px;
+	z-index: 100;
 }
+
 .bb-chat-btn {
 	width: 65px;
 	height: 65px;
@@ -1073,11 +1084,30 @@ textarea.form-control {
 	background-color: #e89a64;
 	color: #000000;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 18px;
-	z-index: 999;
+	display: inline-block;
+}
+.bb-chat-close-btn {
+	width: 65px;
+	height: 65px;
+	line-height: 65px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: #555555;
+	color: var(--white);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 18px;
+	display: none;
+}
+.bb-chat-box.open .bb-chat-btn {
+	display: none;
+}
+.bb-chat-box.open .bb-chat-close-btn {
 	display: inline-block;
 }
 .bb-chat-btn:hover {
 	color: #000000;
+}
+.bb-chat-close-btn:hover {
+	color: var(--white);
 }
 .bb-chat-form {
 	width: 382px;
@@ -1090,6 +1120,10 @@ textarea.form-control {
 	overflow-x: hidden;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 18px;
 	margin-bottom: 20px;
+	display: none;
+}
+.bb-chat-box.open .bb-chat-form {
+	display: block;
 }
 
 .bb-chat-form-title {
@@ -1126,7 +1160,7 @@ textarea.form-control {
 	color: rgba(232, 154, 100, 0.3);
 }
 .bb-chat-form-wrapper {
-	padding: 0 24px;
+	padding: 0 12px;
 }
 .bb-chat-form-btn {
 	text-align: center;
@@ -1141,6 +1175,15 @@ textarea.form-control {
 }
 .bb-chat-form-note a:hover {
 	color: #623e26;
+}
+
+.bb-chat-mobile-close-btn {
+	position: absolute;
+	top: 18px;
+	right: 14px;
+	color: var(--white);
+	cursor: pointer;
+	display: none;
 }
 
 /* ==============chat box End========= */
@@ -1294,6 +1337,12 @@ textarea.form-control {
 	.bb-blog-details-image img {
 		height: 423px;
 	}
+	.bb-chat-form-title {
+		font-size: 22px;
+	}
+	.bb-chat-form-wrapper .form-floating > label {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -1354,6 +1403,7 @@ textarea.form-control {
 		height: 100vh;
 		display: block !important;
 		transition: all ease-in-out 0.3s;
+		z-index: 101;
 	}
 	.navbar-collapse.show {
 		left: 0;
@@ -1679,5 +1729,19 @@ textarea.form-control {
 	}
 	.bb-blog-details-image img {
 		height: 221px;
+	}
+	.bb-chat-form {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: unset;
+		width: 100%;
+		height: 100vh;
+	}
+	.bb-chat-mobile-close-btn {
+		display: block;
+	}
+	.bb-site.chatbox-show {
+		overflow: hidden;
 	}
 }
