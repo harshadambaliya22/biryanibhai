@@ -1484,6 +1484,7 @@ textarea.form-control {
 	}
 	.bb-testimonial-rating-list-content {
 		margin-bottom: 32px;
+		display: flex;
 	}
 	.bb-testimonial-review-count {
 		text-decoration: underline;
@@ -1723,6 +1724,9 @@ textarea.form-control {
 	}
 	.bb-catering-details-content .btn {
 		width: 100%;
+	}
+	.bb-blog-section {
+		padding: 40px 0;
 	}
 	.bb-blog-details-title {
 		font-size: 28px;
